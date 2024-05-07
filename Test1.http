@@ -1,0 +1,6 @@
+@MirTest_HostAddress = http://localhost:5208
+
+GET {{MirTest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
