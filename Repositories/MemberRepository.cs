@@ -109,7 +109,7 @@ public class MemberRepository : IMemberRepository
                 return -1;
             }
 
-            command.CommandText = "SELECT 1 from TaskType where IdProject = @IdTT";
+            command.CommandText = "SELECT 1 from TaskType where IDTaskType = @IdTT";
             command.Parameters.AddWithValue("@IdTT", insertDto.IdTaskType);
             if ((int)command.ExecuteScalar() != 1)
             {
